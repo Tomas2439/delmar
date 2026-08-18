@@ -66,6 +66,7 @@ export default function AboutUs() {
               { icon: <Package size={15} />, text: "Minorista & Mayorista" },
               { icon: <Star size={15} />,    text: "Presupuesto sin cargo" },
               { icon: <MapPin size={15} />,  text: "Mar del Plata" },
+              { icon: <MapPin size={15} />,  text: "Necochea" },
             ].map((badge) => (
               <div
                 key={badge.text}

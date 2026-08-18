@@ -14,15 +14,15 @@ function InstagramIcon({ size = 24, color = "currentColor" }: { size?: number; c
 // Placeholders: replace src with real product photos from Fiorella.
 // All alt texts describe the product for accessibility & SEO.
 const GALLERY_ITEMS = [
-  { id: "gallery-1", src: "/gallery/foto-1.jpg", alt: "Mano sosteniendo un sticker personalizado de vinilo transparente con diseño floral" },
-  { id: "gallery-2", src: "/gallery/foto-2.jpg", alt: "Plancha de stickers holográficos con diseños de corazones y estrellas" },
-  { id: "gallery-3", src: "/gallery/foto-3.jpg", alt: "Fotos polaroid impresas en formato mediano con diseños de viajes" },
-  { id: "gallery-4", src: "/gallery/foto-4.jpg", alt: "Stickers personalizados con fotos de mascotas en formato circular" },
-  { id: "gallery-5", src: "/gallery/foto-5.jpg", alt: "Kit de cumpleaños con tarjetas de invitación y stickers temáticos" },
-  { id: "gallery-6", src: "/gallery/foto-6.jpg", alt: "Stickers para emprendimientos: etiquetas con logo de marca personalizado" },
-  { id: "gallery-7", src: "/gallery/foto-7.jpg", alt: "Planner organizador con imán decorado con stickers coloridos" },
-  { id: "gallery-8", src: "/gallery/foto-8.jpg", alt: "Impresión de fotos 10x15 cm sobre fondo claro con flores de temporada" },
-  { id: "gallery-9", src: "/gallery/foto-9.jpg", alt: "Stickers en vinilo base blanca aplicados en termo de acero inoxidable" },
+  { id: "gallery-1", src: "/gallery/Mafalda.jpeg", alt: "Mano sosteniendo un sticker personalizado de vinilo con diseño de Mafalda." },
+  { id: "gallery-2", src: "/gallery/Plancha.jpeg", alt: "Plancha de stickers con diseños de la selección Argentina." },
+  { id: "gallery-3", src: "/gallery/KitCumple.jpeg", alt: "Kit de cumpleaños con tarjetas de invitación, banderines y stickers tematicos." },
+  { id: "gallery-4", src: "/gallery/StickerMarca.jpeg", alt: "Stickers para emprendimientos: etiquetas con logo de marca personalizado." },
+  { id: "gallery-5", src: "/gallery/Tarjetas.jpeg", alt: "Tarjetas de Presentación, ideal para negociós y emprendimientos." },
+  { id: "gallery-6", src: "/gallery/Bolsita.jpeg", alt: "Bolsa de presentación de stickers personalizados." }, 
+  { id: "gallery-7", src: "/gallery/TermoStickers.jpeg", alt: "Impresión de fotos 10x15 cm sobre fondo claro con flores de temporada" },
+  { id: "gallery-8", src: "/gallery/Plancha2.jpeg", alt: "Stickers en vinilo base blanca aplicados en termo de acero inoxidable" },
+  { id: "gallery-9", src: "/gallery/Imanes.jpeg", alt: "Imanes personalizados ideales para la heladera." },
 ];
 
 export default function Gallery() {

@@ -229,6 +229,7 @@ h1, h2, h3, h4 {
   border-collapse: separate;
   border-spacing: 0;
   font-size: 0.9rem;
+  margin-top: 0;
 }
 .sizes-table th {
   background: rgba(230, 0, 126, 0.08);

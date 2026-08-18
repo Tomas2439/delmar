@@ -15,7 +15,6 @@ const PRODUCTS = [
   { id: "tarjetas-eventos",       icon: <Mail size={26} />,        title: "Tarjetas de Eventos",       desc: "Invitaciones personalizadas para bodas, XV años, baby showers y más.", badge: null },
   { id: "fotos-impresas",         icon: <ImageIcon size={26} />,   title: "Fotos Impresas",            desc: "Revelado desde 6×9 hasta 20×30 cm. Tu momento favorito en papel de alta calidad.", badge: "Muy pedido" },
   { id: "polaroids",              icon: <Sparkles size={26} />,    title: "Fotos Polaroid",            desc: "Formato mini, mediana o grande con el estilo retro que todos amamos.", badge: "Tendencia" },
-  { id: "dtf-uv",                 icon: <Layers size={26} />,      title: "Impresión DTF & UV",        desc: "Tecnología de vanguardia para colores vibrantes y durabilidad excepcional.", badge: null },
 ];
 
 export default function Products() {
@@ -49,7 +48,7 @@ export default function Products() {
             Nuestros <span style={{ color: "#E6007E" }}>Productos</span>
           </h2>
           <p style={{ fontFamily: "'Inter', sans-serif", color: "#888", fontSize: "1rem", maxWidth: 460, margin: "0 auto" }}>
-            Todo personalizable, hecho con amor desde Mar del Plata 💗
+            Todo personalizable, hecho con 💗 desde Mar del Plata 
           </p>
         </div>
 

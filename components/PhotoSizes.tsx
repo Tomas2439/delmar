@@ -76,7 +76,7 @@ export default function PhotoSizes() {
         {/* Panel */}
         <div
           className="glass-card"
-          style={{ padding: "8px 0", overflow: "hidden" }}
+          style={{ padding: "0 0 8px 0", overflow: "hidden" }}
         >
           {/* Fotos impresas */}
           {tab === "fotos" && (
@@ -87,7 +87,6 @@ export default function PhotoSizes() {
                     <th>Medida</th>
                     <th>Cantidad por hoja</th>
                     <th>Descripción</th>
-                    <th style={{ textAlign: "center" }}>Promo</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -100,24 +99,6 @@ export default function PhotoSizes() {
                       </td>
                       <td style={{ color: "#666" }}>{r.qty}</td>
                       <td style={{ color: "#999", fontSize: "0.85rem" }}>{r.desc}</td>
-                      <td style={{ textAlign: "center" }}>
-                        {r.popular && (
-                          <span
-                            style={{
-                              background: "rgba(230,0,126,0.09)",
-                              border: "1px solid rgba(230,0,126,0.28)",
-                              color: "#E6007E",
-                              fontFamily: "'Poppins', sans-serif",
-                              fontWeight: 700,
-                              fontSize: "0.68rem",
-                              padding: "3px 10px",
-                              borderRadius: 50,
-                            }}
-                          >
-                            Popular
-                          </span>
-                        )}
-                      </td>
                     </tr>
                   ))}
                 </tbody>
@@ -125,7 +106,7 @@ export default function PhotoSizes() {
             </div>
           )}
 
-          {/* Polaroid + Promos */}
+          {/* Polaroid */}
           {tab === "polaroid" && (
             <div>
               {/* Sizes table */}
@@ -135,7 +116,6 @@ export default function PhotoSizes() {
                     <tr>
                       <th>Formato</th>
                       <th>Descripción</th>
-                      <th style={{ textAlign: "center" }}>Promo</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -147,24 +127,6 @@ export default function PhotoSizes() {
                           </span>
                         </td>
                         <td style={{ color: "#666" }}>{r.desc}</td>
-                        <td style={{ textAlign: "center" }}>
-                          {r.popular && (
-                            <span
-                              style={{
-                                background: "rgba(230,0,126,0.09)",
-                                border: "1px solid rgba(230,0,126,0.28)",
-                                color: "#E6007E",
-                                fontFamily: "'Poppins', sans-serif",
-                                fontWeight: 700,
-                                fontSize: "0.68rem",
-                                padding: "3px 10px",
-                                borderRadius: 50,
-                              }}
-                            >
-                              Clásico
-                            </span>
-                          )}
-                        </td>
                       </tr>
                     ))}
                   </tbody>
