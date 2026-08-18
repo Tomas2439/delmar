@@ -52,25 +52,12 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#inicio" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}>
           <Image
-            src="/logo-color.jpg"
-            alt="Del Mar Design logo"
-            width={40}
-            height={40}
-            style={{ borderRadius: "50%", objectFit: "cover", boxShadow: "0 2px 10px rgba(230,0,126,0.18)" }}
+            src="/delmar-negro.png"
+            alt="Del Mar Design — logo magenta"
+            width={44}
+            height={44}
+            style={{ objectFit: "contain" }}
           />
-          <span
-            className="nav-wordmark"
-            style={{
-              fontFamily: "'Poppins', sans-serif",
-              fontWeight: 800,
-              fontSize: "0.95rem",
-              letterSpacing: "0.07em",
-              color: "#1A1A1A",
-              display: "none",
-            }}
-          >
-            DEL MAR DESIGN
-          </span>
         </a>
 
         {/* Desktop links */}

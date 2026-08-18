@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { MapPin, ExternalLink } from "lucide-react";
 
-function InstagramIcon({ size = 18 }: { size?: number }) {
+function InstagramIcon({ size = 20 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
@@ -65,7 +65,7 @@ export default function Footer() {
               Del Mar Design
             </h3>
             <p style={{ fontFamily: "'Inter', sans-serif", color: "rgba(255,255,255,0.40)", fontSize: "0.88rem", lineHeight: 1.7, marginBottom: 18 }}>
-              Stickers, papelería y recuerdos personalizados hechos con amor.
+              Stickers, papelería y recuerdos personalizados hechos con amor.<br/>
               El emprendimiento que no sabías que necesitabas 💗
             </p>
             <div style={{ display: "inline-flex", alignItems: "center", gap: 6, color: "rgba(255,255,255,0.35)", fontFamily: "'Inter', sans-serif", fontSize: "0.83rem" }}>
@@ -78,13 +78,13 @@ export default function Footer() {
           <div style={{ textAlign: "center" }}>
             <a href="#inicio">
               <Image
-                src="/logo-white.jpg"
+                src="/delmar-blanco.png"
                 alt="Del Mar Design — logo versión blanca para fondo oscuro"
-                width={96}
-                height={96}
-                style={{ borderRadius: "50%", opacity: 0.88, filter: "brightness(0) invert(1)", transition: "opacity 0.3s" }}
+                width={110}
+                height={110}
+                style={{ objectFit: "contain", opacity: 0.90, transition: "opacity 0.3s" }}
                 onMouseEnter={(e) => ((e.currentTarget as HTMLImageElement).style.opacity = "1")}
-                onMouseLeave={(e) => ((e.currentTarget as HTMLImageElement).style.opacity = "0.88")}
+                onMouseLeave={(e) => ((e.currentTarget as HTMLImageElement).style.opacity = "0.90")}
               />
             </a>
           </div>

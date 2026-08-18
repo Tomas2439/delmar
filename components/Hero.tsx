@@ -54,17 +54,15 @@ export default function Hero() {
         {/* Floating logo */}
         <div className="animate-float" style={{ marginBottom: 32, display: "inline-block" }}>
           <Image
-            src="/logo-color.jpg"
+            src="/delmar-negro.png"
             alt="Logo de Del Mar Design — monograma DMD en forma de corazón, color magenta"
-            width={148}
-            height={148}
+            width={180}
+            height={180}
             priority
             loading="eager"
             style={{
-              borderRadius: "50%",
-              boxShadow:
-                "0 12px 48px rgba(230,0,126,0.22), 0 4px 16px rgba(230,0,126,0.10)",
-              border: "4px solid rgba(255,255,255,0.90)",
+              filter: "drop-shadow(0 12px 28px rgba(230,0,126,0.25))",
+              objectFit: "contain",
             }}
           />
         </div>
