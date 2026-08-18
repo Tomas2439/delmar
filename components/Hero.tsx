@@ -63,6 +63,7 @@ export default function Hero() {
             style={{
               filter: "drop-shadow(0 12px 28px rgba(230,0,126,0.25))",
               objectFit: "contain",
+              height: "auto",
             }}
           />
         </div>

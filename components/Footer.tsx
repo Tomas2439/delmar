@@ -82,7 +82,7 @@ export default function Footer() {
                 alt="Del Mar Design — logo versión blanca para fondo oscuro"
                 width={110}
                 height={110}
-                style={{ objectFit: "contain", opacity: 0.90, transition: "opacity 0.3s" }}
+                style={{ objectFit: "contain", height: "auto", opacity: 0.90, transition: "opacity 0.3s" }}
                 onMouseEnter={(e) => ((e.currentTarget as HTMLImageElement).style.opacity = "1")}
                 onMouseLeave={(e) => ((e.currentTarget as HTMLImageElement).style.opacity = "0.90")}
               />
