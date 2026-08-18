@@ -19,79 +19,70 @@ export default function Hero() {
         alignItems: "center",
         justifyContent: "center",
         overflow: "hidden",
-        background: "radial-gradient(ellipse 80% 60% at 50% 0%, #4a003a 0%, #1a0015 35%, #0D0D0D 70%)",
+        background:
+          "radial-gradient(ellipse 100% 80% at 60% 10%, #fce4f1 0%, #fff8fb 40%, #ffffff 75%)",
       }}
     >
-      {/* Glow orbs */}
-      <div
-        className="glow-orb"
-        style={{ width: 600, height: 600, top: -200, left: -200, opacity: 0.6 }}
-      />
-      <div
-        className="glow-orb"
-        style={{ width: 400, height: 400, bottom: -100, right: -100, opacity: 0.4 }}
-      />
+      {/* Soft orbs */}
+      <div className="glow-orb" style={{ width: 600, height: 600, top: -120, left: -120, opacity: 0.7 }} />
+      <div className="glow-orb" style={{ width: 400, height: 400, bottom: -80, right: -80, opacity: 0.5 }} />
 
-      {/* Dot grid pattern */}
+      {/* Subtle dot grid */}
       <div
         style={{
           position: "absolute",
           inset: 0,
-          backgroundImage:
-            "radial-gradient(rgba(230,0,126,0.15) 1px, transparent 1px)",
-          backgroundSize: "32px 32px",
+          backgroundImage: "radial-gradient(rgba(230,0,126,0.10) 1px, transparent 1px)",
+          backgroundSize: "28px 28px",
           maskImage:
-            "radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%)",
+            "radial-gradient(ellipse 70% 70% at 50% 50%, black 30%, transparent 100%)",
           WebkitMaskImage:
-            "radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%)",
+            "radial-gradient(ellipse 70% 70% at 50% 50%, black 30%, transparent 100%)",
         }}
       />
 
-      {/* Content */}
       <div
         style={{
           position: "relative",
           zIndex: 10,
           textAlign: "center",
           padding: "100px 24px 60px",
-          maxWidth: 720,
+          maxWidth: 700,
           width: "100%",
         }}
       >
-        {/* Logo */}
-        <div
-          className="animate-float"
-          style={{ marginBottom: 32, display: "inline-block" }}
-        >
+        {/* Floating logo */}
+        <div className="animate-float" style={{ marginBottom: 32, display: "inline-block" }}>
           <Image
             src="/logo-color.jpg"
-            alt="Logo de Del Mar Design — Monograma DMD en forma de corazón color magenta"
-            width={140}
-            height={140}
+            alt="Logo de Del Mar Design — monograma DMD en forma de corazón, color magenta"
+            width={148}
+            height={148}
             priority
+            loading="eager"
             style={{
               borderRadius: "50%",
-              boxShadow: "0 0 60px rgba(230,0,126,0.5), 0 0 120px rgba(230,0,126,0.2)",
-              border: "3px solid rgba(230,0,126,0.5)",
+              boxShadow:
+                "0 12px 48px rgba(230,0,126,0.22), 0 4px 16px rgba(230,0,126,0.10)",
+              border: "4px solid rgba(255,255,255,0.90)",
             }}
           />
         </div>
 
         {/* Glass panel */}
-        <div className="glass-hero animate-fade-up" style={{ padding: "40px 36px 44px" }}>
-          {/* Section label */}
-          <div className="section-label" style={{ marginBottom: 20, justifyContent: "center" }}>
-            ✨ Mar del Plata, Argentina
+        <div className="glass-hero animate-fade-up" style={{ padding: "44px 40px 48px" }}>
+          <div className="section-label" style={{ justifyContent: "center", marginBottom: 20 }}>
+            Mar del Plata, Argentina
           </div>
 
           <h1
             style={{
-              fontFamily: "var(--font-poppins), Poppins, sans-serif",
+              fontFamily: "'Poppins', sans-serif",
               fontWeight: 900,
-              fontSize: "clamp(2rem, 6vw, 3.6rem)",
+              fontSize: "clamp(2rem, 6vw, 3.5rem)",
               letterSpacing: "0.04em",
               lineHeight: 1.1,
-              color: "#fff",
+              color: "#1A1A1A",
               textTransform: "uppercase",
               marginBottom: 16,
             }}
@@ -102,30 +93,19 @@ export default function Hero() {
 
           <p
             style={{
-              fontSize: "clamp(1rem, 3vw, 1.25rem)",
-              color: "rgba(255,255,255,0.8)",
-              fontFamily: "var(--font-inter), Inter, sans-serif",
-              fontWeight: 400,
-              lineHeight: 1.5,
-              marginBottom: 36,
+              fontSize: "clamp(1rem, 2.5vw, 1.2rem)",
+              color: "#666",
+              lineHeight: 1.6,
+              marginBottom: 12,
             }}
           >
             El emprendimiento que no sabías que necesitabas 💗
-            <br />
-            <span style={{ fontSize: "0.9em", color: "rgba(255,255,255,0.55)" }}>
-              Stickers · Papelería · Fotos Polaroid · Regalos personalizados
-            </span>
+          </p>
+          <p style={{ fontSize: "0.9rem", color: "#999", marginBottom: 36 }}>
+            Stickers · Papelería · Fotos Polaroid · Regalos personalizados
           </p>
 
-          {/* CTAs */}
-          <div
-            style={{
-              display: "flex",
-              gap: 16,
-              justifyContent: "center",
-              flexWrap: "wrap",
-            }}
-          >
+          <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
             <a
               id="hero-cta-catalogo"
               href={DRIVE_LINK}
@@ -133,7 +113,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="btn-outline"
             >
-              <ExternalLink size={18} /> Ver catálogo
+              <ExternalLink size={17} /> Ver catálogo
             </a>
             <a
               id="hero-cta-wa"
@@ -142,38 +122,24 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="btn-primary"
             >
-              <MessageCircle size={18} /> Pedir presupuesto
+              <MessageCircle size={17} /> Pedir presupuesto
             </a>
           </div>
         </div>
 
-        {/* Scroll indicator */}
+        {/* Scroll cue */}
         <div
           style={{
-            marginTop: 48,
+            marginTop: 44,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            gap: 8,
-            opacity: 0.4,
+            gap: 6,
+            opacity: 0.35,
           }}
         >
-          <div
-            style={{
-              width: 1,
-              height: 48,
-              background: "linear-gradient(to bottom, transparent, rgba(230,0,126,0.8))",
-            }}
-          />
-          <span
-            style={{
-              fontFamily: "var(--font-poppins)",
-              fontSize: "0.7rem",
-              letterSpacing: "0.15em",
-              textTransform: "uppercase",
-              color: "rgba(255,255,255,0.5)",
-            }}
-          >
+          <div style={{ width: 1, height: 44, background: "linear-gradient(to bottom, transparent, #E6007E)" }} />
+          <span style={{ fontFamily: "'Poppins', sans-serif", fontSize: "0.65rem", letterSpacing: "0.18em", textTransform: "uppercase", color: "#E6007E" }}>
             Scroll
           </span>
         </div>

@@ -7,39 +7,15 @@ export default function AboutUs() {
     <section
       id="nosotras"
       style={{
-        background: "#FFFFFF",
+        background: "#FAF7F8",
         padding: "96px 24px",
         position: "relative",
         overflow: "hidden",
       }}
     >
-      {/* Decorative pink blob */}
-      <div
-        style={{
-          position: "absolute",
-          top: -80,
-          right: -80,
-          width: 320,
-          height: 320,
-          borderRadius: "50%",
-          background:
-            "radial-gradient(circle, rgba(230,0,126,0.08) 0%, transparent 70%)",
-          pointerEvents: "none",
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          bottom: -60,
-          left: -60,
-          width: 240,
-          height: 240,
-          borderRadius: "50%",
-          background:
-            "radial-gradient(circle, rgba(230,0,126,0.06) 0%, transparent 70%)",
-          pointerEvents: "none",
-        }}
-      />
+      {/* Decorative orbs */}
+      <div className="glow-orb" style={{ top: -60, right: -60, width: 300, height: 300, opacity: 0.6 }} />
+      <div className="glow-orb" style={{ bottom: -40, left: -40, width: 220, height: 220, opacity: 0.4 }} />
 
       <div
         style={{
@@ -49,77 +25,58 @@ export default function AboutUs() {
           gridTemplateColumns: "1fr 1fr",
           gap: 64,
           alignItems: "center",
+          position: "relative",
+          zIndex: 2,
         }}
         className="about-grid"
       >
-        {/* Text column */}
+        {/* Text */}
         <div>
-          <div className="section-label">
-            💗 Nuestra historia
-          </div>
+          <div className="section-label">Nuestra historia</div>
 
           <h2
             style={{
-              fontFamily: "var(--font-poppins), Poppins, sans-serif",
+              fontFamily: "'Poppins', sans-serif",
               fontWeight: 900,
-              fontSize: "clamp(1.8rem, 4vw, 2.8rem)",
+              fontSize: "clamp(1.8rem, 4vw, 2.7rem)",
               letterSpacing: "0.02em",
               lineHeight: 1.15,
-              color: "#0D0D0D",
+              color: "#1A1A1A",
               textTransform: "uppercase",
               marginBottom: 24,
             }}
           >
-            ¡Hola! Soy{" "}
+            Hola! Soy{" "}
             <span style={{ color: "#E6007E" }}>Fiorella</span>
           </h2>
 
-          <p
-            style={{
-              fontFamily: "var(--font-inter), Inter, sans-serif",
-              fontSize: "1.05rem",
-              lineHeight: 1.75,
-              color: "#444",
-              marginBottom: 16,
-            }}
-          >
-            La creadora de este pequeño gran proyecto lleno de color y
-            creatividad. Así nace <strong style={{ color: "#E6007E" }}>Del Mar Design</strong>,
-            un espacio donde los stickers cobran vida para expresar
-            emociones, ideas y momentos especiales.
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "1.05rem", lineHeight: 1.75, color: "#555", marginBottom: 16 }}>
+            La creadora de este pequeño gran proyecto lleno de color y creatividad.
+            Así nace <strong style={{ color: "#E6007E" }}>Del Mar Design</strong>, un espacio donde los stickers
+            cobran vida para expresar emociones, ideas y momentos especiales.
           </p>
-          <p
-            style={{
-              fontFamily: "var(--font-inter), Inter, sans-serif",
-              fontSize: "1.05rem",
-              lineHeight: 1.75,
-              color: "#444",
-              marginBottom: 32,
-            }}
-          >
-            Cada diseño está hecho con mucho amor, pensado para acompañarte
-            en tu termo, tu computadora o donde quieras darle un toque único
-            a tu día. Hacemos stickers personalizados: ¡mandanos tu foto
-            favorita y nosotros la hacemos sticker!
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "1.05rem", lineHeight: 1.75, color: "#555", marginBottom: 32 }}>
+            Cada diseño está hecho con mucho amor, pensado para acompañarte en tu termo,
+            tu computadora o donde quieras darle un toque único a tu día. Hacemos stickers
+            personalizados: ¡mandanos tu foto favorita y nosotros la hacemos sticker!
           </p>
 
-          {/* Badges */}
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 12 }}>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
             {[
-              { icon: <Package size={16} />, text: "Minorista & Mayorista" },
-              { icon: <Star size={16} />,    text: "Presupuesto sin cargo" },
-              { icon: <MapPin size={16} />,  text: "📍 Mar del Plata" },
+              { icon: <Package size={15} />, text: "Minorista & Mayorista" },
+              { icon: <Star size={15} />,    text: "Presupuesto sin cargo" },
+              { icon: <MapPin size={15} />,  text: "Mar del Plata" },
             ].map((badge) => (
               <div
                 key={badge.text}
                 style={{
                   display: "inline-flex",
                   alignItems: "center",
-                  gap: 8,
-                  background: "rgba(230,0,126,0.08)",
-                  border: "1px solid rgba(230,0,126,0.25)",
+                  gap: 7,
+                  background: "rgba(230,0,126,0.07)",
+                  border: "1px solid rgba(230,0,126,0.20)",
                   color: "#E6007E",
-                  fontFamily: "var(--font-poppins), Poppins, sans-serif",
+                  fontFamily: "'Poppins', sans-serif",
                   fontWeight: 600,
                   fontSize: "0.82rem",
                   padding: "8px 16px",
@@ -133,34 +90,23 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* Visual column */}
-        <div
-          style={{
-            position: "relative",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          {/* Main card */}
+        {/* Visual card */}
+        <div style={{ display: "flex", justifyContent: "center", position: "relative" }}>
           <div
+            className="glass-card"
             style={{
-              background: "linear-gradient(135deg, #fff0f6 0%, #fce4f1 100%)",
-              border: "2px solid rgba(230,0,126,0.2)",
-              borderRadius: 28,
               padding: "48px 36px",
               textAlign: "center",
-              boxShadow: "0 20px 60px rgba(230,0,126,0.12)",
               width: "100%",
               maxWidth: 360,
             }}
           >
-            <div style={{ fontSize: "5rem", marginBottom: 16 }}>🎨</div>
+            <div style={{ fontSize: "4.5rem", marginBottom: 16 }}>🎨</div>
             <p
               style={{
-                fontFamily: "var(--font-poppins), Poppins, sans-serif",
+                fontFamily: "'Poppins', sans-serif",
                 fontWeight: 800,
-                fontSize: "1.4rem",
+                fontSize: "1.3rem",
                 color: "#E6007E",
                 textTransform: "uppercase",
                 letterSpacing: "0.06em",
@@ -169,51 +115,29 @@ export default function AboutUs() {
             >
               Hecho con amor
             </p>
-            <p
-              style={{
-                fontFamily: "var(--font-inter), Inter, sans-serif",
-                color: "#888",
-                fontSize: "0.95rem",
-                lineHeight: 1.6,
-              }}
-            >
+            <p style={{ fontFamily: "'Inter', sans-serif", color: "#888", fontSize: "0.92rem", lineHeight: 1.6 }}>
               Cada sticker es un diseño único, pensado para vos.
             </p>
 
-            {/* Stats row */}
             <div
               style={{
                 marginTop: 28,
                 paddingTop: 24,
-                borderTop: "1px solid rgba(230,0,126,0.15)",
+                borderTop: "1px solid rgba(230,0,126,0.12)",
                 display: "flex",
                 justifyContent: "space-around",
               }}
             >
               {[
-                { n: "10+", label: "Productos" },
-                { n: "100%", label: "Personalizado" },
-                { n: "💗",   label: "Amor MDQ" },
+                { n: "10+",   label: "Productos" },
+                { n: "100%",  label: "Personal." },
+                { n: "💗",    label: "Amor MDQ" },
               ].map((s) => (
                 <div key={s.label} style={{ textAlign: "center" }}>
-                  <div
-                    style={{
-                      fontFamily: "var(--font-poppins), Poppins, sans-serif",
-                      fontWeight: 900,
-                      fontSize: "1.5rem",
-                      color: "#E6007E",
-                    }}
-                  >
+                  <div style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 900, fontSize: "1.5rem", color: "#E6007E" }}>
                     {s.n}
                   </div>
-                  <div
-                    style={{
-                      fontFamily: "var(--font-inter), Inter, sans-serif",
-                      fontSize: "0.72rem",
-                      color: "#999",
-                      fontWeight: 500,
-                    }}
-                  >
+                  <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.7rem", color: "#aaa", fontWeight: 500 }}>
                     {s.label}
                   </div>
                 </div>
@@ -221,29 +145,27 @@ export default function AboutUs() {
             </div>
           </div>
 
-          {/* Floating emoji badges */}
+          {/* Floating badge */}
           <div
             style={{
               position: "absolute",
-              top: -16,
-              right: -10,
+              top: -12,
+              right: 0,
               background: "#E6007E",
               color: "#fff",
-              fontFamily: "var(--font-poppins), Poppins, sans-serif",
+              fontFamily: "'Poppins', sans-serif",
               fontWeight: 700,
-              fontSize: "0.75rem",
+              fontSize: "0.72rem",
               padding: "6px 14px",
               borderRadius: 50,
-              boxShadow: "0 4px 16px rgba(230,0,126,0.4)",
+              boxShadow: "0 4px 16px rgba(230,0,126,0.35)",
               whiteSpace: "nowrap",
             }}
           >
-            ✨ ¡Mandanos tu foto!
+            Manda tu foto!
           </div>
         </div>
       </div>
-
-
     </section>
   );
 }
