@@ -5,6 +5,10 @@ export const metadata: Metadata = {
   title: "Del Mar Design | Stickers, Papelería y Regalos Personalizados — Mar del Plata",
   description:
     "Stickers en vinilo, planchas personalizadas, impresión de fotos, polaroids y papelería para marcas. Minorista y mayorista. Presupuesto sin cargo. 📍 Mar del Plata, Argentina.",
+  icons: {
+    icon: "/delmar-negro.png",
+    apple: "/delmar-negro.png",
+  },
   keywords: [
     "stickers personalizados mar del plata",
     "papelería personalizada",
