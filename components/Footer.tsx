@@ -75,8 +75,8 @@ export default function Footer() {
           </div>
 
           {/* Center — logo */}
-          <div style={{ textAlign: "center" }}>
-            <a href="#inicio">
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <a href="#inicio" style={{ display: "flex", justifyContent: "center" }}>
               <Image
                 src="/delmar-blanco.png"
                 alt="Del Mar Design — logo versión blanca para fondo oscuro"
