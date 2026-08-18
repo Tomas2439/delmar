@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Del Mar Design — Landing Page
 
-## Getting Started
+Landing page oficial de **Del Mar Design**, emprendimiento de stickers, papelería personalizada y regalos desde Mar del Plata, Argentina.
 
-First, run the development server:
+🔗 Instagram: [@delmardesing](https://instagram.com/delmardesing)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Stack
+
+- **Framework**: Next.js 16 (App Router, static export)
+- **Estilos**: Tailwind CSS v4 + CSS custom (glassmorphism claro)
+- **Fuentes**: Google Fonts — Poppins + Inter
+- **Iconos**: lucide-react
+- **Deploy**: Vercel
+
+---
+
+## Estructura
+
+```
+del-mar-design/
+├── app/
+│   ├── globals.css        # Design tokens, glass utilities, animaciones
+│   ├── layout.tsx         # Metadata SEO, favicon
+│   └── page.tsx           # Página principal
+├── components/
+│   ├── Navbar.tsx         # Sticky con glass scroll effect
+│   ├── Hero.tsx           # Logo flotante, gradiente pastel, CTAs
+│   ├── AboutUs.tsx        # Historia de Fiorella
+│   ├── Products.tsx       # Grid de cards glass (10 productos)
+│   ├── PhotoSizes.tsx     # Tabla de medidas: fotos y polaroid
+│   ├── Gallery.tsx        # Grid 3×3 con overlay Instagram
+│   ├── HowToOrder.tsx     # 3 pasos + CTA WhatsApp
+│   ├── Footer.tsx         # Logo blanco, links, ubicación
+│   └── ResponsiveStyles.tsx # Media queries globales
+└── public/
+    ├── delmar-negro.png   # Logo magenta (fondos claros)
+    ├── delmar-blanco.png  # Logo blanco (fondos oscuros)
+    └── gallery/           # Fotos de producto
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Links integrados
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Destino | Valor |
+|---|---|
+| WhatsApp | +54 9 2236 67-2480 |
+| Instagram | [@delmardesing](https://instagram.com/delmardesing) |
+| Catálogo | [Google Drive](https://drive.google.com/drive/folders/1dT4CR1_MviPWuiADV4AGogNiy5genW2D) |
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Desarrollo local
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm install
+npm run dev
+# → http://localhost:3000
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Build
 
-## Deploy on Vercel
+```bash
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+El repo está conectado a Vercel. Cada `push` a `main` genera un nuevo deploy automáticamente.
+
+---
+
+*Hecho con amor en Mar del Plata 💗*
