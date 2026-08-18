@@ -16,14 +16,7 @@ const POLAROID_SIZES = [
   { size: "Grande  7.7 × 10.7 cm",  desc: "Formato grande vertical",  popular: false },
 ];
 
-// Promos apply to Polaroid only — no emojis, no pack names
-const POLAROID_PROMOS = [
-  { qty: "3 fotos"  },
-  { qty: "6 fotos"  },
-  { qty: "9 fotos"  },
-  { qty: "15 fotos" },
-  { qty: "20 fotos" },
-];
+
 
 type Tab = "fotos" | "polaroid";
 
@@ -75,7 +68,7 @@ export default function PhotoSizes() {
               onClick={() => setTab(t)}
             >
               {t === "fotos"    && "Fotos Impresas"}
-              {t === "polaroid" && "Polaroid + Promos"}
+              {t === "polaroid" && "Polaroid"}
             </button>
           ))}
         </div>
@@ -178,70 +171,6 @@ export default function PhotoSizes() {
                 </table>
               </div>
 
-              {/* Promos — quantity only, no emojis, no pack names */}
-              <div
-                style={{
-                  borderTop: "1px solid rgba(230,0,126,0.10)",
-                  padding: "24px",
-                }}
-              >
-                <p
-                  style={{
-                    fontFamily: "'Poppins', sans-serif",
-                    fontWeight: 700,
-                    fontSize: "0.78rem",
-                    letterSpacing: "0.12em",
-                    textTransform: "uppercase",
-                    color: "#E6007E",
-                    marginBottom: 16,
-                  }}
-                >
-                  Promos por cantidad
-                </p>
-                <div
-                  style={{
-                    display: "grid",
-                    gridTemplateColumns: "repeat(auto-fill, minmax(120px, 1fr))",
-                    gap: 12,
-                  }}
-                >
-                  {POLAROID_PROMOS.map((p) => (
-                    <div
-                      key={p.qty}
-                      style={{
-                        background: "rgba(230,0,126,0.06)",
-                        border: "1px solid rgba(230,0,126,0.18)",
-                        borderRadius: 14,
-                        padding: "18px 12px",
-                        textAlign: "center",
-                        transition: "transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease",
-                        cursor: "default",
-                      }}
-                      onMouseEnter={(e) => {
-                        (e.currentTarget as HTMLDivElement).style.transform = "translateY(-3px)";
-                        (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(230,0,126,0.5)";
-                        (e.currentTarget as HTMLDivElement).style.boxShadow = "0 6px 20px rgba(230,0,126,0.14)";
-                      }}
-                      onMouseLeave={(e) => {
-                        (e.currentTarget as HTMLDivElement).style.transform = "translateY(0)";
-                        (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(230,0,126,0.18)";
-                        (e.currentTarget as HTMLDivElement).style.boxShadow = "none";
-                      }}
-                    >
-                      <div
-                        style={{
-                          fontFamily: "'Poppins', sans-serif",
-                          fontWeight: 900,
-                          fontSize: "1.1rem",
-                          color: "#1A1A1A",
-                        }}
-                      >
-                        {p.qty}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
           )}
         </div>
