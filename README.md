@@ -46,7 +46,6 @@ del-mar-design/
 
 | Destino | Valor |
 |---|---|
-| WhatsApp | +54 9 2236 67-2480 |
 | Instagram | [@delmardesing](https://instagram.com/delmardesing) |
 | Catálogo | [Google Drive](https://drive.google.com/drive/folders/1dT4CR1_MviPWuiADV4AGogNiy5genW2D) |
 
