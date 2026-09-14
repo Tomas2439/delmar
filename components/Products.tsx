@@ -6,15 +6,15 @@ import {
 } from "lucide-react";
 
 const PRODUCTS = [
-  { id: "stickers-vinilo",        icon: <Sticker size={26} />,     title: "Stickers en Vinilo",        desc: "Base blanca, cristal, holográfico, DTF o UV. Calidad premium para cualquier superficie.", badge: "Más vendido", price: "Desde $1.500" },
-  { id: "stickers-personalizados",icon: <Camera size={26} />,      title: "Stickers Personalizados",   desc: "Mandanos tu foto favorita y la convertimos en sticker.", badge: "Favorito", price: "Desde $1.500" },
-  { id: "stickers-marcas",        icon: <Users size={26} />,       title: "Stickers para Marcas",      desc: "Etiquetas y stickers para emprendimientos. Pedidos mayoristas con descuento.", badge: "Mayorista", price: "Consultar" },
-  { id: "planchas-personalizadas",icon: <LayoutGrid size={26} />,  title: "Planchas Personalizadas",   desc: "Diseñá tu plancha completa con todos los stickers que quieras.", badge: null, price: "Desde $3.500" },
-  { id: "planners-iman",          icon: <BookOpen size={26} />,    title: "Planners con Imán",         desc: "Organizadores decorativos con imán para la heladera. Funcional y hermoso.", badge: "Nuevo", price: "Desde $4.000" },
-  { id: "kits-cumple",            icon: <Gift size={26} />,        title: "Kits de Cumpleaños",        desc: "Papelería temática, tarjetas de invitación y decoración para eventos.", badge: "Popular", price: "Consultar" },
-  { id: "tarjetas-eventos",       icon: <Mail size={26} />,        title: "Tarjetas de Eventos",       desc: "Invitaciones personalizadas para bodas, XV años, baby showers y más.", badge: null, price: "Desde $2.500" },
-  { id: "fotos-impresas",         icon: <ImageIcon size={26} />,   title: "Fotos Impresas",            desc: "Revelado desde 6×9 hasta 20×30 cm. Tu momento favorito en papel de alta calidad.", badge: "Muy pedido", price: "Desde $500" },
-  { id: "polaroids",              icon: <Sparkles size={26} />,    title: "Fotos Polaroid",            desc: "Formato mini, mediana o grande con el estilo retro que todos amamos.", badge: "Tendencia", price: "Desde $500" },
+  { id: "stickers-vinilo",        icon: <Sticker size={26} />,     title: "Stickers en Vinilo",        desc: "Base blanca, cristal, holográfico, DTF o UV. Calidad premium para cualquier superficie.", badge: "Más vendido" },
+  { id: "stickers-personalizados",icon: <Camera size={26} />,      title: "Stickers Personalizados",   desc: "Mandanos tu foto favorita y la convertimos en sticker.", badge: "Favorito" },
+  { id: "stickers-marcas",        icon: <Users size={26} />,       title: "Stickers para Marcas",      desc: "Etiquetas y stickers para emprendimientos. Pedidos mayoristas con descuento.", badge: "Mayorista" },
+  { id: "planchas-personalizadas",icon: <LayoutGrid size={26} />,  title: "Planchas Personalizadas",   desc: "Diseñá tu plancha completa con todos los stickers que quieras.", badge: null },
+  { id: "planners-iman",          icon: <BookOpen size={26} />,    title: "Planners con Imán",         desc: "Organizadores decorativos con imán para la heladera. Funcional y hermoso.", badge: "Nuevo" },
+  { id: "kits-cumple",            icon: <Gift size={26} />,        title: "Kits de Cumpleaños",        desc: "Papelería temática, tarjetas de invitación y decoración para eventos.", badge: "Popular" },
+  { id: "tarjetas-eventos",       icon: <Mail size={26} />,        title: "Tarjetas de Eventos",       desc: "Invitaciones personalizadas para bodas, XV años, baby showers y más.", badge: null },
+  { id: "fotos-impresas",         icon: <ImageIcon size={26} />,   title: "Fotos Impresas",            desc: "Revelado desde 6×9 hasta 20×30 cm. Tu momento favorito en papel de alta calidad.", badge: "Muy pedido" },
+  { id: "polaroids",              icon: <Sparkles size={26} />,    title: "Fotos Polaroid",            desc: "Formato mini, mediana o grande con el estilo retro que todos amamos.", badge: "Tendencia" },
 ];
 
 export default function Products() {
@@ -109,24 +109,6 @@ export default function Products() {
               <p style={{ fontFamily: "'Inter', sans-serif", color: "#777", fontSize: "0.88rem", lineHeight: 1.65 }}>
                 {product.desc}
               </p>
-              
-              <div style={{ marginTop: 24, flex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-end" }}>
-                <div
-                  style={{
-                    fontFamily: "'Poppins', sans-serif",
-                    fontWeight: 700,
-                    fontSize: "0.95rem",
-                    color: "#E6007E",
-                    background: "rgba(230,0,126,0.06)",
-                    padding: "6px 14px",
-                    borderRadius: 8,
-                    display: "inline-block",
-                    alignSelf: "flex-start",
-                  }}
-                >
-                  {product.price}
-                </div>
-              </div>
             </div>
           ))}
         </div>
