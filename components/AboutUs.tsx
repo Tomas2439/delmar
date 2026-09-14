@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { MapPin, Star, Package } from "lucide-react";
 
 export default function AboutUs() {
@@ -52,7 +53,7 @@ export default function AboutUs() {
 
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "1.05rem", lineHeight: 1.75, color: "#555", marginBottom: 16 }}>
             La creadora de este pequeño gran proyecto lleno de color y creatividad.
-            Así nace <strong style={{ color: "#E6007E" }}>Del Mar Design</strong>, un espacio donde los stickers
+            Así nace <strong style={{ color: "#E6007E" }}>Del Mar Desing</strong>, un espacio donde los stickers
             cobran vida para expresar emociones, ideas y momentos especiales.
           </p>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "1.05rem", lineHeight: 1.75, color: "#555", marginBottom: 32 }}>
@@ -96,13 +97,30 @@ export default function AboutUs() {
           <div
             className="glass-card"
             style={{
-              padding: "48px 36px",
+              padding: "24px",
               textAlign: "center",
               width: "100%",
               maxWidth: 360,
             }}
           >
-            <div style={{ fontSize: "4.5rem", marginBottom: 16 }}>🎨</div>
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                aspectRatio: "1 / 1",
+                borderRadius: "14px",
+                overflow: "hidden",
+                marginBottom: 20,
+                boxShadow: "0 8px 24px rgba(0,0,0,0.08)",
+              }}
+            >
+              <Image
+                src="/fiorella.jpg"
+                alt="Fiorella de Del Mar Design"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+            </div>
             <p
               style={{
                 fontFamily: "'Poppins', sans-serif",
