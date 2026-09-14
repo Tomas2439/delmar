@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 // Inline Instagram SVG (lucide-react doesn't include brand icons)
 function InstagramIcon({ size = 24, color = "currentColor" }: { size?: number; color?: string }) {
@@ -75,25 +76,12 @@ export default function Gallery() {
               className="gallery-item"
               aria-label={`Ver en Instagram: ${item.alt}`}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src={item.src}
                 alt={item.alt}
-                loading="lazy"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                onError={(e) => {
-                  const target = e.currentTarget;
-                  target.style.display = "none";
-                  const parent = target.parentElement;
-                  if (parent && !parent.querySelector(".gallery-placeholder")) {
-                    const el = document.createElement("div");
-                    el.className = "gallery-placeholder";
-                    el.style.cssText =
-                      "width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#fce4f1,#fff8fb);";
-                    el.innerHTML = `<span style="font-size:2rem;opacity:0.4">🎨</span><span style="font-family:Poppins,sans-serif;font-size:0.68rem;color:rgba(230,0,126,0.5);text-align:center;padding:0 12px;">${item.alt}</span>`;
-                    parent.appendChild(el);
-                  }
-                }}
+                fill
+                sizes="(max-width: 768px) 33vw, 300px"
+                style={{ objectFit: "cover" }}
               />
               <div className="gallery-overlay">
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 8 }}>

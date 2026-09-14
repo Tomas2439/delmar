@@ -107,12 +107,10 @@ export default function Hero() {
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
             <a
               id="hero-cta-catalogo"
-              href={DRIVE_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#catalogo"
               className="btn-outline"
             >
-              <ExternalLink size={17} /> Ver catálogo
+              Ver catálogo
             </a>
             <a
               id="hero-cta-wa"
