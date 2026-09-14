@@ -5,14 +5,14 @@ import Image from "next/image";
 
 const TESTIMONIALS = [
   {
-    name: "Camila R.",
-    text: "¡Hermosos los stickers! La calidad del vinilo es excelente y los colores re vivos. Volveré a pedir para mi emprendimiento sin dudas 😍",
+    name: "Mar Cakes",
+    text: "¡Buenisimos los stickers! La calidad es excelente y los colores re vivos. A nuestros clientes les encantan tus stickers 😍",
     role: "Emprendedora",
     img: "/gallery/StickerMarca.jpeg", // Using existing gallery images as avatars/context for now
   },
   {
-    name: "Sofía M.",
-    text: "Pedí las fotos polaroid para un regalo de cumple y quedaron soñadas. La atención de Fiorella un 10. ¡Súper recomendable!",
+    name: "Agus V.",
+    text: "Pedí el kit de cumpleaños, los banderines y las invitaciones quedaron soñadas. La atención de Fiorella un 10. ¡Súper recomendable!",
     role: "Clienta",
     img: "/gallery/KitCumple.jpeg",
   },
