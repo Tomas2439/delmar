@@ -6,7 +6,6 @@ import AboutUs from "@/components/AboutUs";
 import Products from "@/components/Products";
 import PhotoSizes from "@/components/PhotoSizes";
 import Gallery from "@/components/Gallery";
-import Catalog from "@/components/Catalog";
 import Testimonials from "@/components/Testimonials";
 import HowToOrder from "@/components/HowToOrder";
 import Footer from "@/components/Footer";
@@ -21,7 +20,6 @@ export default function Home() {
       <Hero />
       <AboutUs />
       <Products />
-      <Catalog />
       <PhotoSizes />
       <Gallery />
       <Testimonials />
