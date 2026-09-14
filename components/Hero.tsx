@@ -55,7 +55,7 @@ export default function Hero() {
         <div className="animate-float" style={{ marginBottom: 32, display: "inline-block" }}>
           <Image
             src="/delmar-negro.png"
-            alt="Logo de Del Mar Design — monograma DMD en forma de corazón, color magenta"
+            alt="Logo de Del Mar Desing — monograma DMD en forma de corazón, color magenta"
             width={180}
             height={180}
             priority
@@ -87,7 +87,7 @@ export default function Hero() {
             }}
           >
             DEL MAR{" "}
-            <span style={{ color: "#E6007E" }}>DESIGN</span>
+            <span style={{ color: "#E6007E" }}>DESING</span>
           </h1>
 
           <p

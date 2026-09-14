@@ -115,52 +115,11 @@ export default function AboutUs() {
               }}
             >
               <Image
-                src="/fiorella.jpg"
+                src="gallery/Fiorella.jpg"
                 alt="Fiorella de Del Mar Design"
                 fill
                 style={{ objectFit: "cover" }}
               />
-            </div>
-            <p
-              style={{
-                fontFamily: "'Poppins', sans-serif",
-                fontWeight: 800,
-                fontSize: "1.3rem",
-                color: "#E6007E",
-                textTransform: "uppercase",
-                letterSpacing: "0.06em",
-                marginBottom: 8,
-              }}
-            >
-              Hecho con amor
-            </p>
-            <p style={{ fontFamily: "'Inter', sans-serif", color: "#888", fontSize: "0.92rem", lineHeight: 1.6 }}>
-              Cada sticker es un diseño único, pensado para vos.
-            </p>
-
-            <div
-              style={{
-                marginTop: 28,
-                paddingTop: 24,
-                borderTop: "1px solid rgba(230,0,126,0.12)",
-                display: "flex",
-                justifyContent: "space-around",
-              }}
-            >
-              {[
-                { n: "10+",   label: "Productos" },
-                { n: "100%",  label: "Personal." },
-                { n: "💗",    label: "Amor MDQ" },
-              ].map((s) => (
-                <div key={s.label} style={{ textAlign: "center" }}>
-                  <div style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 900, fontSize: "1.5rem", color: "#E6007E" }}>
-                    {s.n}
-                  </div>
-                  <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.7rem", color: "#aaa", fontWeight: 500 }}>
-                    {s.label}
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
 

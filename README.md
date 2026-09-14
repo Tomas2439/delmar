@@ -1,6 +1,6 @@
-# Del Mar Design — Landing Page
+# Del Mar Desing — Landing Page
 
-Landing page oficial de **Del Mar Design**, emprendimiento de stickers, papelería personalizada y regalos desde Mar del Plata, Argentina.
+Landing page oficial de **Del Mar Desing**, emprendimiento de stickers, papelería personalizada y regalos desde Mar del Plata, Argentina.
 
 🔗 Instagram: [@delmardesing](https://instagram.com/delmardesing)
 
@@ -19,9 +19,9 @@ Landing page oficial de **Del Mar Design**, emprendimiento de stickers, papeler�
 ## Estructura
 
 ```
-del-mar-design/
+del-mar-desing/
 ├── app/
-│   ├── globals.css        # Design tokens, glass utilities, animaciones
+│   ├── globals.css        # Desing tokens, glass utilities, animaciones
 │   ├── layout.tsx         # Metadata SEO, favicon
 │   └── page.tsx           # Página principal
 ├── components/
@@ -54,8 +54,8 @@ del-mar-design/
 ## Desarrollo local
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm run dev
 # → http://localhost:3000
 ```
 

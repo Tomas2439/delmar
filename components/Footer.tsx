@@ -62,7 +62,7 @@ export default function Footer() {
                 marginBottom: 14,
               }}
             >
-              Del Mar Design
+              Del Mar Desing
             </h3>
             <p style={{ fontFamily: "'Inter', sans-serif", color: "rgba(255,255,255,0.40)", fontSize: "0.88rem", lineHeight: 1.7, marginBottom: 18 }}>
               Stickers, papelería y recuerdos personalizados hechos con amor.<br/>
@@ -79,7 +79,7 @@ export default function Footer() {
             <a href="#inicio" style={{ display: "flex", justifyContent: "center" }}>
               <Image
                 src="/delmar-blanco.png"
-                alt="Del Mar Design — logo versión blanca para fondo oscuro"
+                alt="Del Mar Desing — logo versión blanca para fondo oscuro"
                 width={110}
                 height={110}
                 style={{ objectFit: "contain", height: "auto", opacity: 0.90, transition: "opacity 0.3s" }}
@@ -158,7 +158,7 @@ export default function Footer() {
         {/* Bottom row */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 10 }}>
           <p style={{ fontFamily: "'Inter', sans-serif", color: "rgba(255,255,255,0.20)", fontSize: "0.78rem" }}>
-            © {new Date().getFullYear()} Del Mar Design · Todos los derechos reservados
+            © {new Date().getFullYear()} Del Mar Desing · Todos los derechos reservados
           </p>
           <p style={{ fontFamily: "'Inter', sans-serif", color: "rgba(255,255,255,0.18)", fontSize: "0.78rem" }}>
             Hecho con amor en Mar del Plata

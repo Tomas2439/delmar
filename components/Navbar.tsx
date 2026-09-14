@@ -53,7 +53,7 @@ export default function Navbar() {
         <a href="#inicio" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}>
           <Image
             src="/delmar-negro.png"
-            alt="Del Mar Design — logo magenta"
+            alt="Del Mar Desing — logo magenta"
             width={44}
             height={44}
             style={{ objectFit: "contain" }}
