@@ -116,7 +116,7 @@ export default function AboutUs() {
             >
               <Image
                 src="gallery/Fiorella.jpg"
-                alt="Fiorella de Del Mar Design"
+                alt="Fiorella de Del Mar Desing"
                 fill
                 style={{ objectFit: "cover" }}
               />
