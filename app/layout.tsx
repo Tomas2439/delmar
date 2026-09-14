@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Del Mar Design | Stickers, Papelería y Regalos Personalizados — Mar del Plata",
+  title: "Del Mar Desing | Stickers, Papelería y Regalos Personalizados — Mar del Plata",
   description:
     "Stickers en vinilo, planchas personalizadas, impresión de fotos, polaroids y papelería para marcas. Minorista y mayorista. Presupuesto sin cargo. 📍 Mar del Plata, Argentina.",
   icons: {
@@ -15,22 +15,22 @@ export const metadata: Metadata = {
     "impresión polaroid",
     "stickers vinilo",
     "regalos personalizados",
-    "del mar design",
+    "del mar Desing",
     "stickers mar del plata",
   ],
-  authors: [{ name: "Del Mar Design" }],
+  authors: [{ name: "Del Mar Desing" }],
   openGraph: {
-    title: "Del Mar Design | Stickers y Papelería Personalizada",
+    title: "Del Mar Desing | Stickers y Papelería Personalizada",
     description:
       "El emprendimiento que no sabías que necesitabas 💗 — Stickers, fotos polaroid y papelería desde Mar del Plata.",
-    url: "https://delmardesign.vercel.app",
-    siteName: "Del Mar Design",
+    url: "https://delmarDesing.vercel.app",
+    siteName: "Del Mar Desing",
     locale: "es_AR",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Del Mar Design | Stickers y Papelería Personalizada",
+    title: "Del Mar Desing | Stickers y Papelería Personalizada",
     description: "El emprendimiento que no sabías que necesitabas 💗",
   },
   robots: { index: true, follow: true },
