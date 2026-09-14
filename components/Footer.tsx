@@ -138,12 +138,12 @@ export default function Footer() {
               {/* Drive */}
               <a
                 id="footer-catalogo"
-                href="#productos"
+                href="https://drive.google.com/drive/folders/1dT4CR1_MviPWuiADV4AGogNiy5genW2D?usp=sharing"
                 style={{ display: "inline-flex", alignItems: "center", gap: 8, color: "rgba(255,255,255,0.40)", fontFamily: "'Poppins', sans-serif", fontWeight: 600, fontSize: "0.88rem", textDecoration: "none", transition: "color 0.2s" }}
                 onMouseEnter={(e) => ((e.currentTarget as HTMLAnchorElement).style.color = "rgba(255,255,255,0.85)")}
                 onMouseLeave={(e) => ((e.currentTarget as HTMLAnchorElement).style.color = "rgba(255,255,255,0.40)")}
               >
-                Ver productos
+                Ver catalogo
               </a>
             </div>
           </div>
